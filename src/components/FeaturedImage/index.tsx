@@ -27,11 +27,21 @@ export const FeaturedImage = () => {
           Cards ques está imperdível.
         </Text>
         <Flex flexDir="row" flexWrap="wrap">
-          <Button mb="10px" mr="10px">
+          <Button
+            mb="10px"
+            mr="10px"
+            bg="black"
+            color="white"
+            _hover={{ color: "black", bg: "white" }}
+          >
             <FaPlay />
             <Text ml="5px">Assistir Agora</Text>
           </Button>
-          <Button>
+          <Button
+            bg="black"
+            color="white"
+            _hover={{ color: "black", bg: "white" }}
+          >
             <InfoIcon />
             <Text ml="5px">Mais informações</Text>
           </Button>

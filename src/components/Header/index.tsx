@@ -19,23 +19,51 @@ export const Header = () => {
   });
 
   return (
-    <Flex p="10px">
+    <Flex p="10px" bg="black">
       <Flex justifyContent="space-between" w="100%">
         <Image w="100px" src={logo} alt="logo-img" />
         {isWideVersion ? (
           <Flex justifyContent="end" w="60%">
-            <Button mr="5px">Inicio</Button>
-            <Button mr="5px">Séries</Button>
-            <Button mr="5px">Filmes</Button>
-            <Button mr="5px">Documentários</Button>
+            <Button
+              bg="black"
+              color="white"
+              _hover={{ color: "black", bg: "white" }}
+              mr="5px"
+            >
+              Inicio
+            </Button>
+            <Button
+              bg="black"
+              color="white"
+              _hover={{ color: "black", bg: "white" }}
+              mr="5px"
+            >
+              Séries
+            </Button>
+            <Button
+              bg="black"
+              color="white"
+              _hover={{ color: "black", bg: "white" }}
+              mr="5px"
+            >
+              Filmes
+            </Button>
+            <Button
+              bg="black"
+              color="white"
+              _hover={{ color: "black", bg: "white" }}
+              mr="5px"
+            >
+              Documentários
+            </Button>
           </Flex>
         ) : (
           <Menu>
-            <MenuButton as={Button} bg="unset">
+            <MenuButton as={Button} bg="unset" color="white">
               <HamburgerIcon />
             </MenuButton>
-            <MenuList zIndex={2}>
-              <MenuItem>Início</MenuItem>
+            <MenuList zIndex={2} bg="black" color="white">
+              <MenuItem _focus={{ bg: "unset" }}>Início</MenuItem>
               <MenuItem>Séries</MenuItem>
               <MenuItem>Filmes</MenuItem>
               <MenuItem>Documentários</MenuItem>
