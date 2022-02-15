@@ -7,6 +7,7 @@ export const FeaturedImage = () => {
     <Flex h={["400px", "700px"]}>
       <Flex
         ml={["10px", "30px"]}
+        mt={["60px", "150px"]}
         flexDir="column"
         w="100%"
         maxW="500px"
@@ -16,7 +17,6 @@ export const FeaturedImage = () => {
         zIndex={1}
         color="white"
         fontSize={["1rem"]}
-        // bg="blue"
       >
         <Heading fontFamily="'Trebuchet MS', Arial, sans-serif">
           HOUSE OF CARDS{" "}

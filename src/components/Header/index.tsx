@@ -19,22 +19,22 @@ export const Header = () => {
   });
 
   return (
-    <Flex bg="blue" p="10px">
+    <Flex p="10px">
       <Flex justifyContent="space-between" w="100%">
         <Image w="100px" src={logo} alt="logo-img" />
         {isWideVersion ? (
-          <Flex justifyContent="space-around" bg="green" w="60%">
-            <Button>Inicio</Button>
-            <Button>Séries</Button>
-            <Button>Filmes</Button>
-            <Button>Documentários</Button>
+          <Flex justifyContent="end" w="60%">
+            <Button mr="5px">Inicio</Button>
+            <Button mr="5px">Séries</Button>
+            <Button mr="5px">Filmes</Button>
+            <Button mr="5px">Documentários</Button>
           </Flex>
         ) : (
           <Menu>
-            <MenuButton as={Button}>
+            <MenuButton as={Button} bg="unset">
               <HamburgerIcon />
             </MenuButton>
-            <MenuList>
+            <MenuList zIndex={2}>
               <MenuItem>Início</MenuItem>
               <MenuItem>Séries</MenuItem>
               <MenuItem>Filmes</MenuItem>
