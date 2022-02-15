@@ -1,12 +1,13 @@
-import React from "react";
-import "./App.css";
+import { Flex } from "@chakra-ui/react";
+import { FeaturedImage } from "./components/FeaturedImage";
 import { Header } from "./components/Header";
 
 function App() {
   return (
-    <div className="App">
+    <Flex flexDir="column" h="100vh">
       <Header />
-    </div>
+      <FeaturedImage />
+    </Flex>
   );
 }
 
